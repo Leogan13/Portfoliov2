@@ -1,0 +1,131 @@
+
+
+ul{
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+}
+
+
+.site-header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+
+    .site-header-inner{
+        display: flex;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        max-width: 1430px;
+        width: 92%;
+        margin-right: auto;
+        margin-left: auto;
+        top: 0px;
+        
+
+        .site-header-section{
+            margin-left: auto;
+
+            .site-menu{
+
+                .site-menu-inner{
+                    display: flex;
+
+                    .site-menu-item{
+                        margin-right: 50px;
+                        color:#ababab;
+                        list-style: none;
+
+                        .site-menu-link{
+                            color: #ababab;
+                            position: relative;
+                            display: block;
+                            font-size: 40px;
+
+                            &:before{
+                                transform: translateX(-50%);
+                                width: 20%;
+                                height: 6px;
+                                position: absolute;
+                                bottom: -20px;
+                                left: 50%;
+                                opacity: 0;
+                                pointer-events: none;
+                                content: '';
+                                border-radius: 6px;
+                                background: #4b6cc1;
+                                transition: all ease .3s;
+                            }
+
+                            &:hover:before{
+                                width: 70%;
+                                opacity: 1;
+                            }
+                        }
+                        
+                    }
+
+                }
+            }
+         
+            
+        }
+
+        .site-logo{
+            color: #fff;
+            font-size: 1.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.25px;
+            margin-top: 17px;
+           
+                &:hover:after{
+                    max-width: 15%;
+                   
+                }
+                &:after{
+                    width: 100%;
+                    height: 6px;
+                    display: block;
+                    content: '';
+                    border-radius: 1000px;
+                    background: #4b6cc1;
+                    margin-top: 17px;
+                    max-width: 40%;
+                    transition: max-width ease .3s;
+                   
+                    
+                   
+                }
+        }
+    }
+}
+
+header{
+    display: block;
+}
+
+
+nav{
+    display: block;
+}
+
+
+
+
+
+li{
+    display: list-item;
+}
+
+
+a{
+    text-decoration: none;
+}

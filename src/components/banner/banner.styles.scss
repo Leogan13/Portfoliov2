@@ -1,0 +1,60 @@
+
+.site-banner{
+    background-size: 700px;
+    padding-top: 131px;
+    border-bottom: none;
+    background: #191a1d;
+    padding-bottom: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+    display: block;
+    .site-banner-inner{
+        top: 0px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        -webkit-box-align: center;
+        padding-top: 130px;
+        padding-bottom: 130px;
+        max-width: 1200px;
+        width: 92%;
+        margin-right: auto;
+        margin-left: auto;
+
+
+        .site-banner-content{
+            padding-right: 147px;
+            text-align: left;
+
+            .site-banner-title{
+                color: #fff;
+                font-size: 4.3rem;
+                font-weight: 400;
+                text-align: left;
+            }
+
+            .site-banner-subtitle{
+                color: #ababab;
+                margin-top: 35px;
+                font-weight: 300;
+                line-height: 140%;
+                font-size: 2.125rem;
+            }
+        }
+
+        .overlap-img{
+            background: #121316;
+            max-width: 424px;
+            flex-shrink: 0;
+            padding: 50px;
+            margin-bottom: 50px;
+            width: 100%;
+            border-radius: 6px;
+
+            img{
+                max-width: 424px;
+            }
+        }
+
+        
+    }
+}
