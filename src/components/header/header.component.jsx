@@ -12,7 +12,6 @@ const Header = () => (
                 <nav className='site-menu'>
                     <ul className='site-menu-inner'>
                         <li className='site-menu-item'><a href="https://www.google.com/?gws_rd=ssl" className='site-menu-link'>Projects</a></li>
-                        <li className='site-menu-item'><a href="https://www.google.com/?gws_rd=ssl" className='site-menu-link'>About</a></li>
                         <li className='site-menu-item'><a href="https://www.google.com/?gws_rd=ssl" className='site-menu-link'>Contact</a></li>
                         <li className='site-menu-item'>
                             <a href="https://drive.google.com/open?id=1vHtYdc-zKYGFdvL5GJYdKhndgroRUebw" target="_blank" rel="noopener noreferrer" className='site-menu-link'>Resume</a>
