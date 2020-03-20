@@ -2,8 +2,13 @@ import React from 'react';
 
 import './directory.styles.scss'
 import Project from '../project/project.component';
-import Project1 from '../../assets/clothing_1.png';
-
+import clothing_1 from '../../assets/clothing_1.png';
+import clothing_2 from '../../assets/clothing_2.png';
+import smart_1 from '../../assets/smart_1.png';
+import smart_2 from '../../assets/smart_2.PNG';
+import postgresql from '../../assets/postgresql.svg';
+import {faReact, faSass, faStripe, faNodeJs} from '@fortawesome/free-brands-svg-icons'
+import firebase from '../../assets/firebase_2.svg';
 
 class Directory extends React.Component {
     constructor() {
@@ -13,22 +18,27 @@ class Directory extends React.Component {
         sections: [
           {
             title: 'Crwn-clothing',
-            imageUrl: Project1,
+            imageUrl: [clothing_1, clothing_2],
             id: 1,
             description: 'E-commerce web app that simulates a clothing store. It has an easy to use shopping cart, implements stripe for payments and firebase for the backend.',
-            tech: ["Html","Css", "Sass", "Javascript","React", "Redux", "Firebase"],
+            tech: [{techName:"React.js", techIcon:faReact},{techName:"Sass", techIcon:faSass}, {techName:"Stripe", techIcon:faStripe}],
             demo: "https://ecommerce-clothing1.herokuapp.com/",
-            code: "https://github.com/Leogan13/Ecommerce-project"
+            code: "https://github.com/Leogan13/Ecommerce-project",
+            special:[{techName:"Firebase", techIcon:firebase}]
+            
+
           },
           {
             title: 'Smart-brain',
-            imageUrl: Project1,
+            imageUrl: [smart_1, smart_2],
             id: 2,  
             description: 'Web App that implements the clarifai API to recognize faces in an image, the server was built with node and express while postgreSQL was used for storage and administration of the users.',
-            tech: ["Html","Css","Javascript", "React","Node.js","Express.js", "PostgreSQL",],
+            tech: [{techName:"React.js", techIcon:faReact},{techName:"Node.js", techIcon:faNodeJs},],
             demo: "http://smart-smart-brain.herokuapp.com",
-            code: "https://github.com/Leogan13/Smart-brain"
-          },
+            code: "https://github.com/Leogan13/Smart-brain",
+            special:[{techName:"Postgresql", techIcon:postgresql}]
+          
+          }
         ]
       };
     }

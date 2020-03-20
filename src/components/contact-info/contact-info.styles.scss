@@ -1,0 +1,80 @@
+
+
+    .site-contact-inner{
+        padding-top: 130px;
+        padding-bottom: 130px;
+        max-width: 1200px;
+        width: 92%;
+        margin-right: auto;
+        margin-left: auto;
+        
+
+        .site-contact-container{
+            display: flex;
+            
+
+            .site-contact-info{
+                width: 65.4117647059%;
+                .site-contact-styles{
+                    padding-bottom: 40px;
+
+                    .site-contact-title{
+                        line-height: 115%;
+                        color: #fff;
+                        font-size: 3.25rem;
+                        font-weight: 400;
+                    }
+
+                    .site-contact-text{
+                        margin-top: 20px;
+                        line-height: 160%;
+                        color: rgba(255,255,255,0.5);
+                        font-size: 1.625rem;
+                    }
+                }
+
+            }
+
+            .site-contact-social{
+                    margin-top:30px;
+                .tech-list{
+                        
+                        
+                    .tech-list-item{
+                        margin-bottom: 30px;
+                        margin-top: 30px;
+                        font-size: 1.25rem;
+                        display: flex;
+                        align-items: center;
+                        -webkit-box-align: center;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        letter-spacing: 1.25px;
+                            a{
+                                color: rgba(255,255,255,0.5);
+                                transition: color ease .3s;
+
+                                &:hover{
+                                    color: #fff;
+                                }
+                            }
+
+                        .tech-list-icon{
+                            max-width: 24px;
+                            max-height: 24px;
+                            margin-right: 15px;
+                            flex-shrink: 0;
+                            color:#4b6cc1;
+                            
+
+                        }
+                    }
+
+                }
+
+
+            }
+
+
+        }
+    }

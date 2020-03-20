@@ -1,20 +1,20 @@
 import React from 'react';
 import './project.styles.scss';
-import project1 from '../../assets/clothing_1.png'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faReact, faSass, faStripe} from '@fortawesome/free-brands-svg-icons'
 import CustomButton from '../button/button.component';
 
-const Project = ({imageUrl, title, description, tech, demo, code}) =>(
+
+const Project = ({imageUrl, title, description, tech, demo, code, special}) =>(
 
     <div className='project-container'>
        <div className='project-img'>
-            <div className='overlap-img'>
-                <a href="www.google.com"><img src={project1} alt="image2"/></a>
-            </div>
-            <div className='overlap-img'>
-                <a href="www.google.com"><img src={project1} alt="image2"/></a>
-            </div>
+           {
+               imageUrl.map((image) => (
+                <div className='overlap-img'>
+                    <a href={demo} target="_blank" rel="noopener noreferrer"><img src={image} alt="image2"/></a>
+                </div>
+               ))
+           }
        </div>
        <div className='project-content'>
            <div className='project-content-info'>
@@ -22,26 +22,26 @@ const Project = ({imageUrl, title, description, tech, demo, code}) =>(
                 <p className='project-description'>{description}</p>
            </div>
            <div className='project-tech'>
-               <ul className='tech-list'>
-                   <li className='tech-list-item'>
-                       <span className='tech-list-icon'> 
-                            <FontAwesomeIcon icon={faReact} ></FontAwesomeIcon>
-                       </span>
-                       React.js
-                   </li>
-                   <li className='tech-list-item'>
-                        <span className='tech-list-icon'>
-                            <FontAwesomeIcon icon={faStripe} ></FontAwesomeIcon>
-                        </span>
-                        Stripe
-                   </li>
-                   <li className='tech-list-item'>
-                        <span className='tech-list-icon'>
-                            <FontAwesomeIcon icon={faSass} ></FontAwesomeIcon>
-                        </span>
-                        Sass
-                   </li>
-               </ul>
+                <ul className="tech-list">
+                    {tech.map((technology) => (
+                        <li className='tech-list-item'>
+                            <span className='tech-list-icon'> 
+                                <FontAwesomeIcon icon={technology.techIcon} style={{fontSize:"24px"}}></FontAwesomeIcon>
+                            </span>
+                            {technology.techName}
+                        </li>
+                    ))}
+                </ul>  
+                <ul className="tech-list">
+                    {special.map((technology) => (
+                        <li className='tech-list-item'>
+                            <span className='tech-list-icon'> 
+                                <img src={technology.techIcon} alt="hello" className='filter-color'/>
+                            </span>
+                            {technology.techName}
+                        </li>
+                    ))}
+                </ul>
            </div>
            <div className='porject-buttons'>
                 <CustomButton source={demo}>View Demo</CustomButton>
