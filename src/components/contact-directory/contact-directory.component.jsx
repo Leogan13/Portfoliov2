@@ -3,7 +3,7 @@ import React from 'react';
 import './contact-directory.styles.scss';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import ContactInfo from '../contact-info/contact-info.component';
-import{faEnvelopeSquare} from '@fortawesome/free-solid-svg-icons';
+import{faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 
 class ContactDirectory extends React.Component {
@@ -14,7 +14,7 @@ class ContactDirectory extends React.Component {
         social: [
           { id: 1,
             socialName: "leogan1399@gmail.com",
-            socialIcon: faEnvelopeSquare,
+            socialIcon: faEnvelope,
             socialLink: "mailto:leogan1399@gmail.com"
 
                 

@@ -7,22 +7,41 @@
         width: 92%;
         margin-right: auto;
         margin-left: auto;
+
+        @media screen and (max-width: 670px){
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
         
 
         .site-contact-container{
             display: flex;
             
+            @media screen and (max-width: 670px){
+                flex-direction: column;
+            }
 
             .site-contact-info{
                 width: 65.4117647059%;
                 .site-contact-styles{
                     padding-bottom: 40px;
-
+                    
+                    @media screen and (max-width: 670px){
+                        padding-bottom: 25px;
+                    }
                     .site-contact-title{
                         line-height: 115%;
                         color: #fff;
                         font-size: 3.25rem;
                         font-weight: 400;
+
+                        @media screen and (max-width: 1280px) and (min-width: 671px){
+                            font-size: 3.00rem;
+                        }
+
+                        @media screen and (max-width: 670px){
+                            font-size: 1.875rem;
+                        }
                     }
 
                     .site-contact-text{
@@ -30,6 +49,10 @@
                         line-height: 160%;
                         color: rgba(255,255,255,0.5);
                         font-size: 1.625rem;
+
+                        @media screen and (max-width: 670px){
+                            font-size: 1.25rem;
+                        }
                     }
                 }
 
@@ -37,8 +60,14 @@
 
             .site-contact-social{
                     margin-top:30px;
+
+                    @media screen and (max-width: 670px){
+                        margin-top:15px;
+                    }
                 .tech-list{
-                        
+                        @media screen and (max-width: 670px){
+                            padding-inline-start: 0;
+                        }
                         
                     .tech-list-item{
                         margin-bottom: 30px;
@@ -50,21 +79,25 @@
                         font-weight: 600;
                         text-transform: uppercase;
                         letter-spacing: 1.25px;
-                            a{
-                                color: rgba(255,255,255,0.5);
-                                transition: color ease .3s;
+                        
+                        @media screen and (max-width: 670px){
+                            font-size: 1rem;
+                        }
+                            
+                        a{
+                            color: rgba(255,255,255,0.5);
+                            transition: color ease .3s;
 
-                                &:hover{
-                                    color: #fff;
-                                }
+                            &:hover{
+                                color: #fff;
                             }
+                        }
 
                         .tech-list-icon{
-                            max-width: 24px;
-                            max-height: 24px;
                             margin-right: 15px;
                             flex-shrink: 0;
                             color:#4b6cc1;
+                           
                             
 
                         }
